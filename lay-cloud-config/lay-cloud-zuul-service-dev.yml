@@ -1,8 +1,16 @@
+abcd: 84548448
 zuul:
+    #定义路由转发规则
     routes:
+        #规则一
         api-a:
+            #拦截所有/api-member开头的url，转发到相关的服务
             path: /api-member/**
+            #注册中心上的服务别名，zuul默认整合ribbon，自动实现负载均衡轮询效果
             serviceId: gfdfgfd
+        #规则二
         api-b:
+            #拦截所有/api-order开头的url，转发到相关的服务
             path: /api-order/**
+            #注册中心上的服务别名，zuul默认整合ribbon，自动实现负载均衡轮询效果
             serviceId: fggfg
