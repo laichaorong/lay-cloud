@@ -1,4 +1,4 @@
-abcd: tests
+abcd: 36481372KSDKKASKD
 zuul:
     #定义路由转发规则
     routes:
